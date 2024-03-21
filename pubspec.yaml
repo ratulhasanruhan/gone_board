@@ -4,6 +4,14 @@ version: 1.0.0
 homepage: https://github.com/ratulhasanruhan/gone_board
 repository: https://github.com/ratulhasanruhan/gone_board
 
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
 environment:
   sdk: '>=3.3.1 <4.0.0'
   flutter: ">=1.17.0"
