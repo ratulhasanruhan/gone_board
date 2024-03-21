@@ -1,9 +1,26 @@
-This is a simple short light weight package to create a simple and easy to use animated onboarding screen.
+<!--
+This README describes the package. If you publish this package to pub.dev,
+this README's contents appear on the landing page for your package.
+
+For information about how to write a good package README, see the guide for
+[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+
+For general information about developing packages, see the Dart guide for
+[creating packages](https://dart.dev/guides/libraries/create-library-packages)
+and the Flutter guide for
+[developing packages and plugins](https://flutter.dev/developing-packages).
+-->
+
+TODO: Put a short description of the package here that helps potential users
+know whether this package might be useful for them.
+<a href="https://ibb.co/kMbjYyK"><img src="https://i.ibb.co/PtXKBYx/image.png" alt="image" border="0"></a>
+<a href="https://ibb.co/R4F4w90"><img src="https://i.ibb.co/jZNZXTM/image.png" alt="image" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>free bbcode</a><br />
+
+<iframe src="https://giphy.com/embed/JEg2wCyYSA4feiswbK" width="262" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/JEg2wCyYSA4feiswbK">via GIPHY</a></p>
 
 ## Features
 
-#Preview
-![](https://i.ibb.co/YRs9vLK/Video-2024-03-22-022518-ezgif-com-video-to-gif-converter.gif)
+![](https://giphy.com/embed/JEg2wCyYSA4feiswbK)
 
 ## Getting started
 
