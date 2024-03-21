@@ -20,7 +20,7 @@ know whether this package might be useful for them.
 
 ## Features
 
-![](https://giphy.com/embed/JEg2wCyYSA4feiswbK)
+![](<iframe src="https://giphy.com/embed/JEg2wCyYSA4feiswbK" width="262" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/JEg2wCyYSA4feiswbK">via GIPHY</a></p>)
 
 ## Getting started
 
