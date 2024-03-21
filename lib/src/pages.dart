@@ -2,20 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:gone_board/src/utils.dart';
 
-class GonePage{
+class GonePage {
   final BuildContext context;
   final String image;
   final String text;
   final Color color;
 
-  GonePage({
-    required this.context,
-    required this.image,
-    required this.text,
-    required this.color
-  });
+  GonePage(
+      {required this.context,
+      required this.image,
+      required this.text,
+      required this.color});
 
-  Widget build(){
+  Widget build() {
     return Container(
       color: darkPrimary,
       padding: const EdgeInsets.fromLTRB(16, 80, 16, 20),
@@ -51,8 +50,8 @@ class GonePage{
             image,
             width: 300,
             height: 300,
-          ).animate()
-              .moveY(begin: 120, end: 0, duration: const Duration(milliseconds: 600)),
+          ).animate().moveY(
+              begin: 120, end: 0, duration: const Duration(milliseconds: 600)),
         ],
       ),
     );

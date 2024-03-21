@@ -19,11 +19,11 @@ class GoneBoard extends StatefulWidget {
   final Function(int index)? pageChanged;
   final List<GonePage> items;
 
-  const GoneBoard({super.key,
+  const GoneBoard({
+    super.key,
     required this.pageController,
     required this.onFinishedPage,
     required this.items,
-
     this.backgroundColor = const Color(0xFF181D4A),
     this.dotColor = const Color(0xFF2E3458),
     this.activeDotColor = const Color(0xFF6C719F),
@@ -50,7 +50,6 @@ class GoneBoard extends StatefulWidget {
     ),
   });
 
-
   @override
   State<GoneBoard> createState() => _OnBoardState();
 }
@@ -69,7 +68,7 @@ class _OnBoardState extends State<GoneBoard> {
             flex: 6,
             child: PageView(
               controller: widget.pageController,
-              onPageChanged: (int page){
+              onPageChanged: (int page) {
                 setState(() {
                   currentPage = page;
                 });
@@ -86,45 +85,50 @@ class _OnBoardState extends State<GoneBoard> {
               children: [
                 SmoothPageIndicator(
                   controller: widget.pageController,
-                  count:  3,
+                  count: 3,
                   axisDirection: Axis.horizontal,
                   effect: SlideEffect(
-                      spacing:  7,
-                      radius:  100,
-                      dotWidth:  31,
-                      dotHeight:  6,
-                      paintStyle:  PaintingStyle.fill,
-                      dotColor: widget.dotColor,
-                      activeDotColor:  widget.activeDotColor,
+                    spacing: 7,
+                    radius: 100,
+                    dotWidth: 31,
+                    dotHeight: 6,
+                    paintStyle: PaintingStyle.fill,
+                    dotColor: widget.dotColor,
+                    activeDotColor: widget.activeDotColor,
                   ),
                 ),
                 const SizedBox(
                   height: 4,
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      gradient: currentPage == 2 ?
-                      widget.startButtonGradient : widget.nextButtonGradient,
+                      gradient: widget.items.length - 1 == currentPage
+                          ? widget.startButtonGradient
+                          : widget.nextButtonGradient,
                     ),
                     child: ElevatedButton(
-                      onPressed: (){
-                        if(currentPage == 2){
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => widget.onFinishedPage));
-                        }else{
-                          widget.pageController.nextPage(duration: const Duration(milliseconds: 400), curve: Curves.easeInCubic);
+                      onPressed: () {
+                        if (widget.items.length - 1 == currentPage) {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => widget.onFinishedPage));
+                        } else {
+                          widget.pageController.nextPage(
+                              duration: const Duration(milliseconds: 400),
+                              curve: Curves.easeInCubic);
                         }
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,
                         elevation: 0,
-                        minimumSize: Size(
-                            MediaQuery.of(context).size.width,
-                            widget.buttonHeight
-                        ),
+                        minimumSize: Size(MediaQuery.of(context).size.width,
+                            widget.buttonHeight),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
@@ -144,5 +148,3 @@ class _OnBoardState extends State<GoneBoard> {
     );
   }
 }
-
-
