@@ -1,6 +1,6 @@
 name: gone_board
 description: "A stylish and animated onboarding screen for your App. It's easy to use light weight and customizable."
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/ratulhasanruhan/gone_board
 repository: https://github.com/ratulhasanruhan/gone_board
 issue_tracker: https://github.com/ratulhasanruhan/gone_board/issues
@@ -18,6 +18,15 @@ topics:
   - onboarding
   - animated
   - pageview
+
+
+screenshots:
+  - description: "Example of first page"
+    path: example/screenshot/screenshot1.png
+  - description: "Example of middle page"
+    path: example/screenshot/screenshot2.png
+  - description: "Example of final page"
+    path: example/screenshot/screenshot3.png
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
