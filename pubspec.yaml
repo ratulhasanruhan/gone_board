@@ -14,9 +14,9 @@ platforms:
   windows:
 
 topics:
-  - UI
+  - ui
   - onboarding
-  - Animation PageView
+  - animated pageview
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
