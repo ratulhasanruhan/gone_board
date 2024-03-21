@@ -3,6 +3,7 @@ description: "A stylish and animated onboarding screen for your App. It's easy t
 version: 1.0.0
 homepage: https://github.com/ratulhasanruhan/gone_board
 repository: https://github.com/ratulhasanruhan/gone_board
+issue_tracker: https://github.com/ratulhasanruhan/gone_board/issues
 
 platforms:
   android:
@@ -11,6 +12,11 @@ platforms:
   macos:
   web:
   windows:
+
+topics:
+  - UI
+  - onboarding
+  - Animation PageView
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
