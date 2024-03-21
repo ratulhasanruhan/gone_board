@@ -13,7 +13,7 @@ Add the package to your `pubspec.yaml` file.
 Check /example folder for more details
 
 Required parameters:
-- `onFiishedPage` - Main page after onboarding
+- `onFinishedPage` - Main page after onboarding
 - `pageController` - PageController for the onboarding
 - `items` - List of GonePage 
 
