@@ -22,8 +22,6 @@ topics:
 
 documentation: https://pub.dev/packages/gone_board
 
-
-
 screenshots:
   - description: "Example of first page"
     path: example/screenshot/screenshot1.png

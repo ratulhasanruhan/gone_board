@@ -17,3 +17,7 @@
 ## 1.0.4
 
 * added Author
+
+## 1.0.5
+
+* added Documentation
