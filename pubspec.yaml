@@ -20,6 +20,11 @@ topics:
   - pageview
 
 
+authors:
+  - Ratul Hasan Ruhan
+
+
+
 screenshots:
   - description: "Example of first page"
     path: example/screenshot/screenshot1.png

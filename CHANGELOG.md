@@ -13,3 +13,7 @@
 ## 1.0.3
 
 * added Screenshots
+
+## 1.0.4
+
+* added Author
